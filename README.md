@@ -16,8 +16,8 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
     ```
     $ export SAUCE_USERNAME=<your Sauce Labs username>
 	$ export SAUCE_ACCESS_KEY=<your Sauce Labs access key>
-  export SAUCE_USERNAME="hien_rain"
-  export SAUCE_ACCESS_KEY="ba78a48e-f983-4dca-bdb6-624e1e40e025"
+  export SAUCE_USERNAME="hienntt_rain"
+  export SAUCE_ACCESS_KEY="0f58c3ed-fc35-4608-ad52-94e77a5f0303"
     ```
 3. Project Dependencies
 	* Install Node modules
