@@ -161,7 +161,7 @@ exports.config = {
 
     mochaOpts: {
         ui: 'bdd',
-        timeout:100000
+        timeout:1000000
     },
     // =====
     // Hooks
