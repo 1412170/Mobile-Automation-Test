@@ -17,6 +17,12 @@
 	```
 	$ npm test
 	```
+	
+* Run test each 5 minutes and grab screenshots
+	```
+	$ watch -n 300 "npm test"
+	```
+	
 [Sauce Labs Dashboard](https://saucelabs.com/beta/dashboard/)
 
 ### Resources
