@@ -56,30 +56,30 @@ exports.config = {
         // 5 instance gets started at a time.
         //maxInstances: 5,
         //
+        {
+            browserName: '',
+            appiumVersion: '1.4.16',
+            deviceName: 'Samsung Galaxy S4 Emulator',
+            deviceOrientation: 'portrait',
+            platformVersion: '4.4',
+            platformName: 'Android',
+            app: "sauce-storage:ttgt.apk",
+            // app: 'https://github.com/appium/sample-code/blob/master/sample-code/apps/ApiDemos/bin/ApiDemos-debug.apk?raw=true',
+            waitforTimeout: 600,
+            commandTimeout: 600
+        }
         // {
         //     browserName: '',
         //     appiumVersion: '1.4.16',
-        //     deviceName: 'Samsung Galaxy S4 Emulator',
+        //     deviceName: 'Android Emulator',
         //     deviceOrientation: 'portrait',
-        //     platformVersion: '4.4',
+        //     platformVersion: '5.1',
         //     platformName: 'Android',
         //     app: "sauce-storage:ttgt.apk",
         //     // app: 'https://github.com/appium/sample-code/blob/master/sample-code/apps/ApiDemos/bin/ApiDemos-debug.apk?raw=true',
         //     waitforTimeout: 300,
         //     commandTimeout: 300
-        // },
-        {
-            browserName: '',
-            appiumVersion: '1.4.16',
-            deviceName: 'Android Emulator',
-            deviceOrientation: 'portrait',
-            platformVersion: '5.1',
-            platformName: 'Android',
-            app: "sauce-storage:ttgt.apk",
-            // app: 'https://github.com/appium/sample-code/blob/master/sample-code/apps/ApiDemos/bin/ApiDemos-debug.apk?raw=true',
-            waitforTimeout: 300,
-            commandTimeout: 300
-        }
+        // }
     ],
     //
     // ===================
@@ -106,7 +106,7 @@ exports.config = {
     baseUrl: 'http://saucelabs.github.io',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 100000,
+    waitforTimeout: 1000000,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
@@ -160,7 +160,8 @@ exports.config = {
     //
 
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        timeout:100000
     },
     // =====
     // Hooks
